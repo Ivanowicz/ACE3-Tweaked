@@ -8,4 +8,7 @@ class ACE_Settings {
     class EGVAR(medical,ivFlowRate) {
         movedToSQF = 1;
     };
+    class EGVAR(medical,stableVitalsMaxHemorrhageLevel) {
+        movedToSQF = 1;
+    };
 };

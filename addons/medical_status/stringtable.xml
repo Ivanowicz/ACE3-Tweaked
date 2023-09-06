@@ -117,5 +117,37 @@
             <Turkish>IV Torbalardan sıvının ne kadar hızlı aktığını kontrol eder. IV Torba hacim değişikliği şu şekilde hesaplanır: zaman aralıkları iv saniye başına değişim (4.1667 mL / s) akış hızı (bu katsayı).</Turkish>
             <Korean>수액용기에서 얼마나 빨리 들어가는 지를 정합니다. 초당 4.16ml * 계수를 적용받습니다.</Korean>
         </Key>
+        <Key ID="STR_ACE_Medical_Status_StableVitalsMaxHemorrhageLevel_DisplayName">
+            <English>Max Blood Loss To Wake Up</English>
+            <German>Transfusions Fließrate</German>
+            <Japanese>IV 輸血の流量</Japanese>
+            <Russian>Скорость внутривенного переливания</Russian>
+            <French>Débit de transfusion IV</French>
+            <Portuguese>Velocidade de Transferência de Sangue</Portuguese>
+            <Chinese>點滴輸血流量</Chinese>
+            <Chinesesimp>点滴输血流量</Chinesesimp>
+            <Italian>IV Portata della trasfusione</Italian>
+            <Czech>Rychlost IV transfuze </Czech>
+            <Polish>Natężenie Przepływu Transfuzji IV</Polish>
+            <Spanish>IV Flujo de transfusión</Spanish>
+            <Turkish>IV Transfüzyon Akış Hızı</Turkish>
+            <Korean>수혈 속도</Korean>
+        </Key>
+        <Key ID="STR_ACE_Medical_Status_StableVitalsMaxHemorrhageLevel_Description">
+            <English>Maximum amount of blood lost before an unconcious unit is unable to wake up without a blood transfusion</English>
+            <German>Transfusions Fließrate</German>
+            <Japanese>IV 輸血の流量</Japanese>
+            <Russian>Скорость внутривенного переливания</Russian>
+            <French>Débit de transfusion IV</French>
+            <Portuguese>Velocidade de Transferência de Sangue</Portuguese>
+            <Chinese>點滴輸血流量</Chinese>
+            <Chinesesimp>点滴输血流量</Chinesesimp>
+            <Italian>IV Portata della trasfusione</Italian>
+            <Czech>Rychlost IV transfuze </Czech>
+            <Polish>Natężenie Przepływu Transfuzji IV</Polish>
+            <Spanish>IV Flujo de transfusión</Spanish>
+            <Turkish>IV Transfüzyon Akış Hızı</Turkish>
+            <Korean>수혈 속도</Korean>
+        </Key>
     </Package>
 </Project>
