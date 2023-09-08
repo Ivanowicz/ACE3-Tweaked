@@ -29,14 +29,21 @@ if (isNil QEFUNC(medical,setUnconscious)) then {
     if ((_mouseOver select 0) != "OBJECT") then {
         [LSTRING(NothingSelected)] call FUNC(showMessage);
     } else {
-        private _unit = effectivecommander (_mouseOver select 1);
+        private _unit = effectiveCommander (_mouseOver select 1);
 
         if !(_unit isKindOf "CAManBase") then {
             [LSTRING(OnlyInfantry)] call FUNC(showMessage);
         } else {
-            if !(alive _unit) then {
+            private _cardiacArrest = (EFUNC(medical,IN_CRDC_ARRST(unit)));
+            if (!(alive _unit) and (!_cardiacArrest)) then {
                 [LSTRING(OnlyAlive)] call FUNC(showMessage);
             } else {
+                if (_cardiacArrest) then {
+                    TRACE_1("Exiting cardiac arrest",_unit);
+                    [QEGVAR(medical,CPRSucceeded), _unit] call CBA_fnc_localEvent;
+                    /*_state = GET_SM_STATE(_unit)
+                    TRACE_1("after CPRSucceeded",_state);*/
+                };
                 private _unconscious = GETVAR(_unit,ACE_isUnconscious,false);
                 if (_unconscious) then {
                     _unit setVariable [QEGVAR(medical_statemachine,AIUnconsciousness), nil, true];
