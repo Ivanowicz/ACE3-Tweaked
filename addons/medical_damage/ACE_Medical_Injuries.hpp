@@ -78,7 +78,7 @@ class ACE_Medical_Injuries {
 
         class bullet {
             // bullets only create multiple wounds when the damage is very high
-            thresholds[] = {{20, 10}, {4.5, 2}, {3, 1}, {0, 1}};
+            thresholds[] = {{10, 2}, {3, 1}, {0, 1}};
             selectionSpecific = 1;
 
             class Avulsion {
@@ -109,7 +109,7 @@ class ACE_Medical_Injuries {
         };
         class grenade {
             // at low damage numbers, chance to create no wounds - makes it a bit more random instead of consistently covering people in bruises
-            thresholds[] = {{20, 10}, {10, 5}, {4, 3}, {1.5, 2}, {0.8, 2}, {0.3, 1}, {0, 0}};
+            thresholds[] = {{10, 3}, {1.5, 2}, {0.8, 2}, {0.3, 1}, {0, 0}};
             selectionSpecific = 0;
             class Avulsion {
                 weighting[] = {{1.5, 1}, {1.1, 0}};
@@ -131,7 +131,7 @@ class ACE_Medical_Injuries {
         };
         class explosive {
             // explosives create more and smaller wounds than grenades
-            thresholds[] = {{20, 15}, {8, 7}, {2, 3}, {1.2, 2}, {0.4, 1}, {0,0}};
+            thresholds[] = {{20, 3}, {1.2, 2}, {0.4, 1}, {0,0}};
             selectionSpecific = 0;
             class Avulsion {
                 weighting[] = {{1, 1}, {0.8, 0}};
@@ -147,7 +147,7 @@ class ACE_Medical_Injuries {
         };
         class shell {
             // shells tend to involve big pieces of shrapnel, so create fewer and larger wounds
-            thresholds[] = {{20, 10}, {10, 5}, {4.5, 2}, {2, 2}, {0.8, 1}, {0.2, 1}, {0, 0}};
+            thresholds[] = {{10, 3}, {4.5, 2}, {2, 2}, {0.8, 1}, {0.2, 1}, {0, 0}};
             selectionSpecific = 0;
             class Avulsion {
                 weighting[] = {{1.5, 1}, {1.1, 0}};
